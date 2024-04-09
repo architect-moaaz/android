@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/basicFragment">
+
+    <fragment
+        android:id="@+id/basicFragment"
+        android:name="com.intelliflow.apps.view.BasicFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_basic" >
+        <action
+            android:id="@+id/action_BasicFragment_to_TodoFragment"
+            app:destination="@id/todoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/todoFragment"
+        android:name="com.intelliflow.apps.view.BasicFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_basic" >
+        <action
+            android:id="@+id/action_TodoFragment_to_BasicFragment"
+            app:destination="@id/basicFragment" />
+    </fragment>
+
+</navigation>

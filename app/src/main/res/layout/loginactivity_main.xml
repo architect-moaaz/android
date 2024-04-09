@@ -1,0 +1,298 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_gravity="left"
+    android:background="#fff"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+android:gravity="left"
+        android:background="#fff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="447dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimaryDark" />
+
+        <View
+            android:layout_width="99dp"
+            android:layout_height="101dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="69dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="253.86dp"
+            android:background="@drawable/ic_dots" />
+
+        <TextView
+            android:id="@+id/logintitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="213dp"
+            android:fontFamily="@font/lato"
+            android:gravity="top"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+<!--        android:textAppearance="@style/top_text"-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="299dp"
+            android:background="@drawable/rectangle_container">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/img"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/lato"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="info@intelliflow.io"
+                android:textSize="12sp" />
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/etPassword"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="45dp"-->
+            <!--                android:layout_below="@+id/editTextEmail"-->
+            <!--                android:layout_marginStart="30dp"-->
+            <!--                android:layout_marginTop="12dp"-->
+            <!--                android:layout_marginEnd="30dp"-->
+            <!--                android:layout_marginBottom="1dp"-->
+            <!--                android:background="@drawable/btn_bg"-->
+            <!--                android:drawableEnd="@drawable/show_password_selector"-->
+            <!--                android:fontFamily="@font/lato"-->
+            <!--                android:hint="Password"-->
+            <!--                android:inputType="textPassword"-->
+            <!--                android:paddingLeft="10dp"-->
+            <!--                android:paddingRight="10dp"-->
+            <!--                android:text="Welcome@123"-->
+            <!--                android:textSize="12sp"-->
+            <!--                tools:ignore="TouchTargetSizeCheck" >-->
+
+
+            <!--            </EditText>-->
+
+            <ProgressBar
+                android:id="@+id/loginProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:minWidth="100dp"
+                android:minHeight="100dp"
+                android:visibility="invisible" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textPasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextEmail"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:boxBackgroundMode="none"
+                android:textDirection="locale"
+                app:passwordToggleEnabled="true">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/editTextEmail"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/btn_bg"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textDirection="locale"
+                    android:hint="@string/password"
+                    android:text="Welcome@123" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--            <CheckBox-->
+            <!--                android:id="@+id/check_box"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@id/editTextPassword"-->
+            <!--                android:layout_marginStart="30dp"-->
+            <!--                android:layout_marginTop="7.96dp"-->
+            <!--                android:text="Remember Me"-->
+            <!--                android:textSize="12sp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/fgt_pswd"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@id/editTextPassword"-->
+            <!--                android:layout_alignEnd="@+id/editTextPassword"-->
+            <!--                android:layout_alignRight="@+id/editTextPassword"-->
+            <!--                android:layout_marginTop="1.96dp"-->
+            <!--                android:text="Forgot Password?"-->
+            <!--                android:textColor="#0D3C84"-->
+            <!--                android:textSize="12sp" />-->
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textPasswordLayout"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <CheckBox
+                    android:id="@+id/check_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableStart="?android:attr/listChoiceIndicatorMultiple"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="ltr"
+                    android:text="@string/rememberme"
+                    android:textDirection="ltr"
+                    android:textSize="12sp" />
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/fgt_pswd1"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:fontFamily="@font/lato"-->
+                <!--                    android:gravity="top"-->
+                <!--                    android:text=""-->
+                <!--                    android:textColor="#0D3C84"-->
+                <!--                    android:textSize="12sp"-->
+                <!--                    android:visibility="invisible" />-->
+
+                <TextView
+                    android:id="@+id/fgt_pswd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/lato"
+                    android:gravity="right"
+                    android:text="@string/forgot_password1"
+                    android:textColor="#0D3C84"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/language_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout1"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/btn_bg">
+
+                <Spinner
+                    android:id="@+id/language"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/spinner_bg"
+                    android:fontFamily="@font/lato"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/language_view"
+                android:layout_alignStart="@+id/language_view"
+                android:layout_alignLeft="@+id/language_view"
+                android:layout_alignEnd="@+id/language_view"
+                android:layout_alignRight="@+id/language_view"
+                android:layout_gravity="center"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!--                <androidx.appcompat.widget.AppCompatButton-->
+                <!--                    android:id="@+id/btnAuth"-->
+                <!--                    android:layout_width="145dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_alignParentLeft="true"-->
+                <!--                    android:layout_marginStart="1dp"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:layout_marginRight="10dp"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:background="@drawable/bio_btn"-->
+                <!--                    android:fontFamily="@font/lato"-->
+                <!--                    android:paddingLeft="20dp"-->
+                <!--                    android:paddingTop="3dp"-->
+                <!--                    android:paddingRight="20dp"-->
+                <!--                    android:paddingBottom="3dp"-->
+                <!--                    android:text="@string/biometric"-->
+                <!--                    android:textColor="@color/accentColor"-->
+                <!--                    android:textSize="12sp"-->
+                <!--                    android:textStyle="bold" />-->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_btn"
+                    android:fontFamily="@font/lato"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="3dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:text="@string/login"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

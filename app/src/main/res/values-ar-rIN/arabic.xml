@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="login">تسجيل الدخول</string>
+
+    <string name="password">كلمة المرور</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="prompt_email">البريد الإلكتروني</string>
+
+    <string name="prompt_password">Password</string>
+
+    <string name="action_sign_in">Sign in or register</string>
+
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="invalid_username">Not a valid username</string>
+
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="splash_screen">"Splash Screen"</string>
+    <string name="forgot_password1">نسيت كلمة المرور؟</string>
+    <string name="forgot_password">هل نسيت كلمة السر</string>
+    <string name="biometric">بصمات</string>
+    <string name="rememberme">تذكرنى</string>
+
+    <string-array name="languages">
+        <item>Select</item>
+        <item>English</item>
+        <item>عربي</item>
+    </string-array>
+
+    <string name="email">البريد الإلكتروني</string>
+
+
+</resources>

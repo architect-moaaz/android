@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+<!--        <item name="android:textStyle">normal</item>-->
+        <item
+            android:id="@+id/notificationSettings"
+            android:icon="@drawable/notification"
+            android:actionLayout="@layout/fragment_gallery"
+            android:iconTint="@color/black"
+            android:title="@string/notification_settings" />
+
+        <item
+            android:id="@+id/termsuse"
+            android:icon="@drawable/helpcenter"
+            android:iconTint="@color/black"
+            android:title="@string/terms_use" />
+
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/feedback"
+            android:iconTint="@color/black"
+            android:title="@string/feedback" />
+
+
+        <item
+            android:id="@+id/legal"
+            android:icon="@drawable/legal"
+            android:iconTint="@color/black"
+            android:title="@string/privacy_policy" />
+
+
+
+
+
+</menu>

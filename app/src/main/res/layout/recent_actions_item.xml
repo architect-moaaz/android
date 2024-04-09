@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/title_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:drawablePadding="5dp"
+            android:textColor="@color/black"
+            android:text="@string/appllied_for"/>
+
+        <TextView
+            android:id="@+id/recent_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/calender_time"
+            android:drawablePadding="5dp"
+            android:letterSpacing="0.1"
+            android:text="@string/time"
+            android:textColor="@color/black"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/recent_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/person_icon"
+            android:textSize="8sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="5dp"
+            android:textColor="@color/black"
+            android:text="@string/action_Person_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recent_status"
+            android:layout_gravity="end"
+            android:layout_margin="5dp"
+            android:drawablePadding="5dp"
+            android:letterSpacing="0.15"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:text="@string/action_status"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
